@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level */
+            /*display: inline; para transformar em inline level*/
+            background-color: lightblue;
+            width: 300px;
+            height: 100px;
+
+            /* ↓↓↓↓ ANATOMIA DE UMA CAIXA ↓↓↓↓ */
+
+            /*border-width: 10px; /*largura da borda*/
+            /*border-style: solid; /*borda solida visível*/
+            /*border-color: darkslategray;
+            /*com shorthand*/
+            border:  10px solid darkslategray;
+
+            /*espaçamento interno*/
+            /*padding-top: 10px; /*cima*/
+            /*padding-right: 10px; /*direita*/
+            /*padding-bottom: 10px; /*baixo*/
+            /*padding-left: 10px; /*esquerda*/
+            /*com shorthand*/
+            padding: 10px;  /*10px 10px 10px 10px; se for tudo a mesma medida*/
+
+            /*espaçamento externo*/
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+            
+            /*Com shorthand*/
+            margin: 20px auto 40px auto; /*sentido horário, auto centralizando esquerda direita*/
+
+            /*margin: auto; /*centralização do meio*/
+            /*Contorno outline*/
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;*/
+
+            /*Com Shorthand*/
+            outline: 5px dashed salmon;
+
+        }
+        a{ /* inline-level */
+            /*display: block; Para transformar em box-level*/
+            display: inline-block;
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px; /*cima*/
+            padding-right: 10px; /*direita*/
+            padding-bottom: 10px; /*baixo*/
+            padding-left: 10px; /*esquerda*/
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Modelo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os
+    <a href="#">links são exemplos de caixas inline-level</a>
+    Vamos ver como tudo isso funciona.</p>
+    
+</body>
+</html>

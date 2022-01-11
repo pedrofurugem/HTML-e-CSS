@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* :hover, :visited, :active, :checked, :empty, :focus */
+        /*  SELETORES PERSONALIZADOS
+          #  =  id
+          .  =  class
+          :  =  pseudo-class
+          :: =  pseudo-element
+          >  =  children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline; /*sublinhado*/
+        }    
+
+        a:active{
+            color: yellow;
+        }
+
+        .especial{
+            background-color: rgb(250, 162, 162)
+        }
+
+        /*pseudo-elementos*/
+        /*
+        A propriedade CSS content é usada com os 
+        pseudoelementos ::before e ::after 
+        para gerar conteúdo em um elemento
+        */
+        .especial::after {
+          content: '←';
+          /*text-decoration: none; /*não sublinhado*/
+          /*font-weight: normal;*/
+          /*color: darkgray;*/
+        }
+        .especial::before{
+            content: '→';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/cursoemvideo" target="_blank">
+            Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo/videos"
+            target="_blank" class="especial">Canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" 
+            target="_blank" class="especial">Site do curso em video</a></li>
+    </ul>   
+</body>
+</html>
+
+<!--TABELA DE SIMBOLOS: https://erikasarti.com/html/dingbats-simbolos-desenhos/-->
+
+<!--
+Uma pseudo-classe CSS é uma palavra-chave adicionada às declarações de um seletor
+após um sinal de dois pontos e especificam um estado especial de um elemento.
+Existem várias pseudo-classes para estilos, podemos
+citar :hover, :visited, :active, :checked, :empty e :focus.
+
+Já um pseudo-elemento CSS é uma palavra-chave adicionada às declarações de um
+seletor após dois sinais de dois pontos e permitem que você formate um pedaço
+específico do elemento referenciado. Os principais pseudo-elementos usados nas CSS
+são ::before, ::after, ::first-letter, ::first-line
+-->

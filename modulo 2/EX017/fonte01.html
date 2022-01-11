@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {         /*Arial, Helvetica, sans-serif*/
+                      /* 1  -     2   -    3  safe-combinations*/
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas:
+            cc, centimetro
+            mm, milimetro
+            in, polegada = 2,54 cm
+            px, pixel
+            pt, ponto, medida tipográfica
+            pc, pi(ai)ca
+
+            Medidas Relativas:
+            em, tamanho atual da fonte
+            ex, altura x de uma ponte
+            rem, root fonte configurada no body
+            vw, view port largura da tela
+            vh, view port altura da tela
+            %, porcentagem
+            16px geralmente = 1em
+            */
+        }
+        h1{
+            /* lighter normal bold bolder */
+            /* weight=peso, width=largura, height=altura */
+            /*  '''''Shorthand font''''''''''
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+            font-size: 1em;
+            font-style: italic;
+            font-family -> font-weight -> font-size -> font-style
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2 {
+           font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit, Eum harum
+    optio, architecto a sint consectetur quos vitae eos ducimus aspernaturibus
+    porro suscipit, possimus rem ipsa dolorem perferendis aspernaturibus saepe 
+    velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit, Eum harum
+    optio, architecto a sint consectetur quos vitae eos ducimus aspernaturibus
+    porro suscipit, possimus rem ipsa dolorem perferendis aspernaturibus saepe 
+    velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit, Eum harum
+    optio, architecto a sint consectetur quos vitae eos ducimus aspernaturibus
+    porro suscipit, possimus rem ipsa dolorem perferendis aspernaturibus saepe 
+    velit </p>
+    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit, Eum harum
+        optio, architecto a sint consectetur quos vitae eos ducimus aspernaturibus
+        porro suscipit, possimus rem ipsa dolorem perferendis aspernaturibus saepe 
+        velit</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit, Eum harum
+    optio, architecto a sint consectetur quos vitae eos ducimus aspernaturibus
+    porro suscipit, possimus rem ipsa dolorem perferendis aspernaturibus saepe 
+    velit..  </p>
+</body>
+</html>
