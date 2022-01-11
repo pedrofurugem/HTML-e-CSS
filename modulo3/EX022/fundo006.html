@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com imagem de fundo</title>
+    <style>
+        body {
+            height: 100vh; /*view port*/
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            /*evitando a quebra*/
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover /*contain auto*/;
+            /*
+            auto: automático
+            contain:  adaptar o tamanho sem contar
+            cover: sem cortes mas preenche a tela inteira
+            */
+        }
+        main{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit, Eum harum
+            optio, architecto a sint consectetur quos vitae eos ducimus aspernaturibus
+            porro suscipit, possimus rem ipsa dolorem perferendis aspernaturibus saepe 
+            velit Lorem ipsum dolor sit amet consectetur, adipisicing elit, Eum harum
+            optio, architecto a sint consectetur quos vitae eos ducimus aspernaturibus
+            porro suscipit, possimus rem ipsa dolorem perferendis aspernaturibus saepe 
+            velit Lorem ipsum dolor sit amet consectetur, adipisicing elit, Eum harum
+            optio, architecto a sint consectetur quos vitae eos ducimus aspernaturibus
+            porro suscipit, possimus rem ipsa dolorem perferendis aspernaturibus saepe 
+            velit.
+       </p>
+    </main>
+</body>
+</html>
