@@ -9,6 +9,11 @@
     padding: 0px;
 }
 
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 :root{
     --fonte-titulo: 'Passion One', cursive;
     --fonte-poema: 'Sriracha', cursive;
@@ -17,48 +22,57 @@
 
 header {
     background-color: black;
-    height: 200px;
+    color: white;
+    text-align: center;
 }
 
 header > h1 {
-    color: white;
-    text-align: center;
-    padding-top: 60px;
+    padding-top: 50px; /*divido 50 pra cima e 50 pra baixo*/
     font-family: var(--fonte-titulo);
-    font-size: 4em;
+    font-variant: small-caps;
+    font-size: 5em;
 }
 
 header > p {
+    padding-bottom: 50px;
+}
+
+header  a, footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;  /* viewport dimensão do conteúdo*/
+    padding-bottom: 10vh; /* variando a visualização de tela */
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-poema);
+}
+
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    background-color: rgb(61, 60, 60);
+    color: white
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.219);
+    color: white;
+    width: 200px;
+}
+
+footer {
+    background-color: black;
     color: white;
     text-align: center;
-}
-
-#estrofe1{
-    width: 250px;
-    height: 200px;
-    margin: 20px 0 80px 80px;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    font-family: var(--fonte-poema);
-    
-}
-
-#imagem{
-    background-image: url('imagens/background001.jpg');
-    background-size: 100% 100%;
-    margin-top: 40px;
-    position: relative;
-    width: 1400px;
-    height: 500px;
-}
-
-#estrofe2{
-    font-family: var(--fonte-poema);
-    background: transparent;
-    color: white;
-    position: absolute;
-    font-size: 1.5em;
-    height: 500px;
-    width: 280px;
-    padding: 40px 0 0 80px;
+    padding: 10px;
 }
