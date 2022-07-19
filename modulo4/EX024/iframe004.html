@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe 004</title>
+    <style>
+        iframe{
+            border: 1px solid black;
+            height: 100;
+            width: 100;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu site Principal</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adip
+        Lorem ipsum dolor sit amet, consectetur adip
+        Lorem ipsum dolor sit amet, consectetur adip
+        Lorem ipsum dolor sit amet, consectetur adip
+        Lorem ipsum dolor sit amet, consectetur adip
+        Lorem ipsum dolor sit amet, consectetur adip
+    </p>
+    <!--sandbox para permitir coisas
+        estou permitindo mesma origem uso de form scripts
+    no-referrer; não permitirá a coleta de dado do usuário-->
+    <iframe src="paginas extras/pagina004.html"
+     sandbox="allow-same-origin allow-forms allow-scripts" 
+     referrerpolicy="no-referrer">
+     Seu navegador não é compativel com isso
+    </iframe>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adip
+        Lorem ipsum dolor sit amet, consectetur adip
+        Lorem ipsum dolor sit amet, consectetur adip
+        Lorem ipsum dolor sit amet, consectetur adip
+        Lorem ipsum dolor sit amet, consectetur adip
+        Lorem ipsum dolor sit amet, consectetur adip
+    </p>
+</body>
+</html>
