@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif
+        }
+    </style>
+</head>
+<body>
+    <!--action e submit-->
+    <!--cadastro.php - para cadastrar dados-->
+    <!-- objeto e etiqueta de formulario
+        name = util para php e html
+        id = útil para javascript
+    -->
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"> </p>
+    </form>
+</body>
+</html>
+
+<!--metodo get = usar para dados não sensiveis  -->
+<!--metod post = usar para dados sensiveis      -->
